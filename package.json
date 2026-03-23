@@ -1,0 +1,14 @@
+{
+  "name": "sebastien-aglae-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:profile-assets": "node profile-assets/generate-profile-assets.mjs"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/manrope": "^5.2.7",
+    "@fontsource/syne": "^5.2.7"
+  }
+}
