@@ -7,6 +7,8 @@
 <div align="center">
   <a href="https://sebastien-aglae.fr">Portfolio</a>
   ·
+  <a href="https://www.dash-systems.fr/">Dash Systems</a>
+  ·
   <a href="https://core-dash.com">Core Dash</a>
   ·
   <a href="https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/">LinkedIn</a>
@@ -31,6 +33,21 @@
   <img src="./profile-assets/exports/education-card.png" alt="Education" width="49%" />
 </div>
 
+<p align="center">
+  Source export pages:
+  <a href="./profile-assets/html/profile-hero.html">profile-hero.html</a>
+  ·
+  <a href="./profile-assets/html/dash-systems-capabilities.html">dash-systems-capabilities.html</a>
+  ·
+  <a href="./profile-assets/html/project-matrix.html">project-matrix.html</a>
+  ·
+  <a href="./profile-assets/html/awards-card.html">awards-card.html</a>
+  ·
+  <a href="./profile-assets/html/driving-licenses.html">driving-licenses.html</a>
+  ·
+  <a href="./profile-assets/html/education-card.html">education-card.html</a>
+</p>
+
 ## Profile
 
 I build ambitious software products across game development, backend systems, AI orchestration, and interactive product design.
@@ -39,6 +56,14 @@ I build ambitious software products across game development, backend systems, AI
 - Creator of Core Dash
 - Full-stack engineer across Unity, .NET, React, cloud infrastructure, data systems, and IoT
 - Based in the south of France, open to opportunities in Osaka
+
+## Selected Work
+
+### Dash Systems
+Freelance website and delivery framework for premium websites, back-offices, mobile apps, connected systems, and custom software.
+
+- Stack: Next.js, React, TypeScript, responsive UI, animation, SEO, deployment, maintenance
+- Focus: trust-first positioning, clear scope, premium execution, end-to-end delivery
 
 ## Selected Stack
 <p>
@@ -83,7 +108,7 @@ I build ambitious software products across game development, backend systems, AI
     <img src="./assets/skills/logo_openai.svg" alt="OpenAI" width="32" />
     <img src="./assets/skills/logo_osgi_equinox.png" alt="OSGi Equinox" width="32" />
     <img src="./assets/skills/logo_ovh.svg" alt="OVH" width="32" />
-    <img src="./assets/skills/logo_pc_soft.png" alt "PC Soft" width="32" />
+    <img src="./assets/skills/logo_pc_soft.png" alt="PC Soft" width="32" />
     <img src="./assets/skills/logo_play_store.svg" alt="Play Store" width="32" />
     <img src="./assets/skills/logo_postgres.svg" alt="PostgreSQL" width="32" />
     <img src="./assets/skills/logo_protobuf.svg" alt="Protobuf" width="32" />
@@ -106,5 +131,6 @@ I build ambitious software products across game development, backend systems, AI
 ## Contact
 
 - Portfolio: https://sebastien-aglae.fr/
+- Dash Systems: https://www.dash-systems.fr/
 - Product: https://core-dash.com/
 - LinkedIn: https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/

@@ -47,6 +47,7 @@ const assets = {
   },
   projects: {
     coreDash: 'assets/projects/coredash-color-logo.svg',
+    dashSystems: 'assets/projects/dash-systems-color-logo.svg',
     myAirline: 'assets/projects/myairlinemanager-color-logo.png',
     fnesi: 'assets/projects/fnesi-color-logo.png',
     hana: 'assets/projects/hana-games-color-logo.svg',
@@ -99,6 +100,14 @@ function projectCardHtml(project) {
 
 async function getProjects() {
   return [
+    {
+      title: 'Dash Systems',
+      period: '2026 -> Present',
+      summary: 'Freelance website and delivery framework for premium websites, back-offices, mobile apps, connected systems, and custom enterprise software.',
+      impact: 'Turns a freelance offer into a structured product narrative with clear scope, visual credibility, and a concrete path from brief to delivery.',
+      stack: 'NEXT.JS / REACT / TYPESCRIPT / SEO / UX / ANIMATION / DEPLOYMENT',
+      logo: await readAssetDataUrl(assets.projects.dashSystems)
+    },
     {
       title: 'Core Dash',
       period: '2025 -> Present',
@@ -305,16 +314,29 @@ function buildDocument({ title, fileName, captureWidth, bodyMarkup, fontFaces })
       .matrix-title-block { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
       .matrix-title { margin: 0; font-size: 64px; line-height: 0.94; }
       .matrix-tags { display: flex; gap: 10px; flex-wrap: wrap; max-width: 100%; }
+      .capability-shell { display: flex; flex-direction: column; width: 100%; padding: 34px; gap: 26px; color: var(--text); }
+      .capability-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr); gap: 24px; align-items: stretch; }
+      .capability-main { display: flex; flex-direction: column; gap: 18px; padding: 28px; }
+      .capability-logo { width: 240px; max-width: 100%; height: auto; object-fit: contain; }
+      .capability-url { font-size: 18px; line-height: 1.4; overflow-wrap: anywhere; }
+      .capability-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+      .capability-card { display: flex; flex-direction: column; gap: 12px; padding: 22px; min-width: 0; }
+      .capability-card-title { margin: 0; font-size: 28px; line-height: 1; overflow-wrap: anywhere; }
+      .capability-card-copy { margin: 0; font-size: 17px; line-height: 1.5; }
+      .capability-card-label { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
       @media (max-width: 980px) {
         .toolbar { flex-direction: column; align-items: stretch; }
         .toolbar-right { justify-content: space-between; }
         .split-card,
         .education-card,
+        .capability-hero,
+        .capability-grid,
         .hero-grid,
         .hero-bottom,
         .hero-metric-grid { grid-template-columns: 1fr; }
         .hero-shell,
-        .matrix-shell { padding: 24px; }
+        .matrix-shell,
+        .capability-shell { padding: 24px; }
         .hero-title { font-size: 56px; }
         .split-title,
         .matrix-title { font-size: 34px; }
@@ -638,12 +660,113 @@ async function buildMatrixPage(fontFaces) {
   });
 }
 
+async function buildDashSystemsPage(fontFaces) {
+  const dashSystems = await readAssetDataUrl(assets.projects.dashSystems);
+
+  const capabilities = [
+    {
+      title: 'Front-end Web',
+      label: 'Premiere impression / conversion',
+      copy: 'Un site qui donne immediatement confiance, qui se charge vite et qui reste clair sur chaque ecran.'
+    },
+    {
+      title: 'Back-end & Architecture',
+      label: 'Fiabilite / fondations',
+      copy: 'Le socle technique qui fait tourner le produit proprement, sans fragilite cachee.'
+    },
+    {
+      title: 'Back-office sur mesure',
+      label: 'Outils internes / autonomie',
+      copy: 'Un espace d administration pense pour les vraies personnes qui vont l utiliser chaque jour.'
+    },
+    {
+      title: 'Applications mobiles',
+      label: 'Usage / mobilite',
+      copy: 'Des applications mobiles fiables, rapides et agreables a prendre en main sur iOS comme sur Android.'
+    },
+    {
+      title: 'Logiciels & outils metier',
+      label: 'Besoins specifiques / desktop',
+      copy: 'Quand un site web ne suffit pas, je peux aussi intervenir sur des outils metier plus specifiques.'
+    },
+    {
+      title: 'IoT & systemes connectes',
+      label: 'Hardware / temps reel',
+      copy: 'Du capteur a l interface finale, avec des donnees visibles et exploitables en temps reel.'
+    },
+    {
+      title: 'Solutions custom & enterprise',
+      label: 'Sur mesure / cas complexes',
+      copy: 'Pour les besoins qui ne rentrent dans aucune case standard, avec un niveau de personnalisation eleve.'
+    }
+  ];
+
+  return buildDocument({
+    title: 'Dash Systems Capabilities',
+    fileName: 'dash-systems-capabilities',
+    captureWidth: 1440,
+    fontFaces,
+    bodyMarkup: `
+      <div class="frame">
+        <div class="capability-shell">
+          <div class="capability-hero">
+            <div class="panel capability-main">
+              <div class="mono accent-orange eyebrow">Dash Systems / freelance website / offer map</div>
+              <img src="${dashSystems}" width="240" height="72" class="capability-logo" alt="Dash Systems" />
+              <div class="headline split-title">Ce que je peux construire</div>
+              <p class="split-text">Une vue d ensemble simple pour comprendre ce qui peut etre livre. Chaque competence s ouvre ensuite avec une representation visuelle plus concrete.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:10px; max-width:100%;">
+                ${htmlTag('SITES PREMIUM')}
+                ${htmlTag('BACK-END / API')}
+                ${htmlTag('BACK-OFFICE')}
+                ${htmlTag('MOBILE / IOT', 'orange')}
+                ${htmlTag('CUSTOM / ENTERPRISE')}
+              </div>
+            </div>
+            <div class="panel-alt capability-main">
+              <div class="mono accent-orange eyebrow">Endpoint</div>
+              <a href="https://www.dash-systems.fr/" target="_blank" rel="noreferrer" class="capability-url">www.dash-systems.fr</a>
+              <p class="split-text">Des systemes solides. Des experiences qui respirent. Un cadre freelance pour concevoir, livrer et maintenir des produits numeriques complets.</p>
+              <div class="detail-list">
+                <div class="detail-item">
+                  <div class="detail-title">Positioning</div>
+                  <div class="mono detail-meta">Freelance haut de gamme</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-title">Delivery</div>
+                  <div class="mono detail-meta">Conception → mise en ligne</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-title">Support</div>
+                  <div class="mono detail-meta">Maintenance / documentation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="capability-grid">
+            ${capabilities
+              .map(
+                (capability) => `
+                  <article class="panel capability-card">
+                    <div class="mono accent-orange capability-card-label">${capability.label}</div>
+                    <h3 class="headline capability-card-title">${capability.title}</h3>
+                    <p class="capability-card-copy">${capability.copy}</p>
+                  </article>`
+              )
+              .join('')}
+          </div>
+        </div>
+      </div>`
+  });
+}
+
 async function main() {
   await mkdir(htmlDir, { recursive: true });
   const fontFaces = await getFontFaces();
 
   const pages = [
     ['awards-card.html', await buildAwardsCardPage(fontFaces)],
+    ['dash-systems-capabilities.html', await buildDashSystemsPage(fontFaces)],
     ['driving-licenses.html', await buildDrivingLicensesPage(fontFaces)],
     ['education-card.html', await buildEducationPage(fontFaces)],
     ['profile-hero.html', await buildHeroPage(fontFaces)],
