@@ -128,6 +128,6 @@ Freelance website and delivery framework for premium websites, back-offices, mob
 ## Contact
 
 - Portfolio: https://sebastien-aglae.fr/
-- Dash Systems: https://www.dash-systems.fr/
+- Dash Systems: https://dash-systems.fr/
 - Product: https://core-dash.com/
 - LinkedIn: https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/
