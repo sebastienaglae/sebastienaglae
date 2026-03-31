@@ -23,6 +23,12 @@
 <br />
 
 <div align="center">
+  <img src="./profile-assets/exports/dash-systems-capabilities.png" alt="Dash Systems capabilities" width="100%" />
+</div>
+
+<br />
+
+<div align="center">
   <img src="./profile-assets/exports/awards-card.png" alt="Awards and competitions" width="49%" />
   <img src="./profile-assets/exports/driving-licenses.png" alt="Driving licenses" width="49%" />
 </div>
@@ -34,7 +40,6 @@
 </div>
 
 <p align="center">
-  Source export pages:
   <a href="./profile-assets/html/profile-hero.html">profile-hero.html</a>
   ·
   <a href="./profile-assets/html/dash-systems-capabilities.html">dash-systems-capabilities.html</a>
@@ -54,6 +59,7 @@ I build ambitious software products across game development, backend systems, AI
 
 - Co-founder of Hana Games
 - Creator of Core Dash
+- Builder of Dash Systems Freelance
 - Full-stack engineer across Unity, .NET, React, cloud infrastructure, data systems, and IoT
 - Based in the south of France, open to opportunities in Osaka
 
@@ -77,31 +83,25 @@ Freelance website and delivery framework for premium websites, back-offices, mob
   <img src="./assets/skills/logo_c_sharp.svg" alt="C#" width="32" />
     <img src="./assets/skills/logo_c.svg" alt="C" width="32" />
     <img src="./assets/skills/logo_claude.svg" alt="Claude" width="32" />
-    <img src="./assets/skills/logo_d3js.svg" alt="D3.js" width="32" />
     <img src="./assets/skills/logo_docker.svg" alt="Docker" width="32" />
     <img src="./assets/skills/logo_dot_net.svg" alt=".NET" width="32" />
     <img src="./assets/skills/logo_eclipse_ide.svg" alt="Eclipse IDE" width="32" />
     <img src="./assets/skills/logo_figma.svg" alt="Figma" width="32" />
     <img src="./assets/skills/logo_firebase.svg" alt="Firebase" width="32" />
-    <img src="./assets/skills/logo_framer_motion.svg" alt="Framer Motion" width="32" />
-    <img src="./assets/skills/logo_garnet.svg" alt="Garnet" width="32" />
     <img src="./assets/skills/logo_gemini.svg" alt="Gemini" width="32" />
     <img src="./assets/skills/logo_github_actions.svg" alt="GitHub Actions" width="32" />
     <img src="./assets/skills/logo_github_copilot.svg" alt="GitHub Copilot" width="32" />
     <img src="./assets/skills/logo_google_ads.svg" alt="Google Ads" width="32" />
-    <img src="./assets/skills/logo_google_antigravity.svg" alt="Google Antigravity" width="32" />
     <img src="./assets/skills/logo_google_app_script.svg" alt="Google App Script" width="32" />
     <img src="./assets/skills/logo_google.svg" alt="Google" width="32" />
     <img src="./assets/skills/logo_grpc.svg" alt="gRPC" width="32" />
     <img src="./assets/skills/logo_highlightjs.png" alt="Highlight.js" width="32" />
     <img src="./assets/skills/logo_java.svg" alt="Java" width="32" />
     <img src="./assets/skills/logo_javascript.svg" alt="JavaScript" width="32" />
-    <img src="./assets/skills/logo_lucide_react.svg" alt="Lucide React" width="32" />
     <img src="./assets/skills/logo_maven.svg" alt="Maven" width="32" />
     <img src="./assets/skills/logo_mongo.svg" alt="MongoDB" width="32" />
     <img src="./assets/skills/logo_mosquitto.svg" alt="Mosquitto" width="32" />
     <img src="./assets/skills/logo_mqtt.svg" alt="MQTT" width="32" />
-    <img src="./assets/skills/logo_nats.svg" alt="NATS" width="32" />
     <img src="./assets/skills/logo_nextjs.svg" alt="Next.js" width="32" />
     <img src="./assets/skills/logo_om2m.png" alt="OM2M" width="32" />
     <img src="./assets/skills/logo_onem2m.svg" alt="oneM2M" width="32" />
@@ -116,7 +116,6 @@ Freelance website and delivery framework for premium websites, back-offices, mob
     <img src="./assets/skills/logo_raspberry_pi.svg" alt="Raspberry Pi" width="32" />
     <img src="./assets/skills/logo_react.svg" alt="React" width="32" />
     <img src="./assets/skills/logo_redis.svg" alt="Redis" width="32" />
-    <img src="./assets/skills/logo_scylladb.svg" alt="ScyllaDB" width="32" />
     <img src="./assets/skills/logo_sentry.svg" alt="Sentry" width="32" />
     <img src="./assets/skills/logo_shadcn_ui.svg" alt="shadcn/ui" width="32" />
     <img src="./assets/skills/logo_sql.png" alt="SQL" width="32" />
@@ -124,8 +123,6 @@ Freelance website and delivery framework for premium websites, back-offices, mob
     <img src="./assets/skills/logo_typescript.svg" alt="TypeScript" width="32" />
     <img src="./assets/skills/logo_unity.svg" alt="Unity" width="32" />
     <img src="./assets/skills/logo_vite.svg" alt="Vite" width="32" />
-    <img src="./assets/skills/logo_zod.svg" alt="Zod" width="32" />
-    <img src="./assets/skills/logo_zustand.svg" alt="Zustand" width="32" />
 </p>
 
 ## Contact
