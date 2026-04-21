@@ -9,6 +9,8 @@
   ·
   <a href="https://www.dash-systems.fr/">Dash Systems</a>
   ·
+  <a href="https://aeromodel.dash-systems.fr/">AeroModel</a>
+  ·
   <a href="https://core-dash.com">Core Dash</a>
   ·
   <a href="https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/">LinkedIn</a>
@@ -29,6 +31,12 @@
 <br />
 
 <div align="center">
+  <img src="./profile-assets/exports/aeromodel-showcase.png" alt="AeroModel showcase" width="100%" />
+</div>
+
+<br />
+
+<div align="center">
   <img src="./profile-assets/exports/awards-card.png" alt="Awards and competitions" width="49%" />
   <img src="./profile-assets/exports/driving-licenses.png" alt="Driving licenses" width="49%" />
 </div>
@@ -41,6 +49,8 @@
 
 <p align="center">
   <a href="./profile-assets/html/profile-hero.html">profile-hero.html</a>
+  ·
+  <a href="./profile-assets/html/aeromodel-showcase.html">aeromodel-showcase.html</a>
   ·
   <a href="./profile-assets/html/dash-systems-capabilities.html">dash-systems-capabilities.html</a>
   ·
@@ -60,10 +70,17 @@ I build ambitious software products across game development, backend systems, AI
 - Co-founder of Hana Games
 - Creator of Core Dash
 - Builder of Dash Systems Freelance
+- Builder of AeroModel
 - Full-stack engineer across Unity, .NET, React, cloud infrastructure, data systems, and IoT
 - Based in the south of France, open to opportunities in Osaka
 
 ## Selected Work
+
+### AeroModel
+Aircraft visualization API product by Dash Systems for aviation, branding, compliance, marketing, and internal tools.
+
+- Stack: Next.js, image API design, Cloudflare edge delivery, product design, structured catalog workflows
+- Focus: angle-specific aircraft renders, airline liveries, fast integration, global delivery
 
 ### Dash Systems
 Freelance website and delivery framework for premium websites, back-offices, mobile apps, connected systems, and custom software.
@@ -129,5 +146,6 @@ Freelance website and delivery framework for premium websites, back-offices, mob
 
 - Portfolio: https://sebastien-aglae.fr/
 - Dash Systems: https://dash-systems.fr/
+- AeroModel: https://aeromodel.dash-systems.fr/
 - Product: https://core-dash.com/
 - LinkedIn: https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/

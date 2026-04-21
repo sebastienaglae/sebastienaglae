@@ -46,6 +46,9 @@ const assets = {
     diploma: 'assets/credentials/diploma.svg'
   },
   projects: {
+    aeroModel: 'assets/projects/aeromodel-logo-blue.svg',
+    aeroModelName: 'assets/projects/aeromodel-name-logo-blue.svg',
+    aeroModelOg: 'assets/projects/aeromodel-og.png',
     coreDash: 'assets/projects/coredash-color-logo.svg',
     dashSystems: 'assets/projects/dash-systems-color-logo.svg',
     myAirline: 'assets/projects/myairlinemanager-color-logo.png',
@@ -107,6 +110,14 @@ async function getProjects() {
       impact: 'Turns a freelance offer into a structured product narrative with clear scope, visual credibility, and a concrete path from brief to delivery.',
       stack: 'NEXT.JS / REACT / TYPESCRIPT / SEO / UX / ANIMATION / DEPLOYMENT',
       logo: await readAssetDataUrl(assets.projects.dashSystems)
+    },
+    {
+      title: 'AeroModel',
+      period: '2026 -> Present',
+      summary: 'Aircraft visualization API that generates angle-specific plane images with airline liveries for aviation, branding, compliance, marketing, and internal tools.',
+      impact: 'Packages aircraft imagery into a fast product layer that can plug into booking funnels, dashboards, approvals, and media workflows without manual asset production.',
+      stack: 'NEXT.JS / IMAGE API / CLOUDFLARE / EDGE DELIVERY / B2B SAAS / PRODUCT DESIGN',
+      logo: await readAssetDataUrl(assets.projects.aeroModel)
     },
     {
       title: 'Core Dash',
@@ -760,11 +771,109 @@ async function buildDashSystemsPage(fontFaces) {
   });
 }
 
+async function buildAeroModelPage(fontFaces) {
+  const aeroModelName = await readAssetDataUrl(assets.projects.aeroModelName);
+  const aeroModelMark = await readAssetDataUrl(assets.projects.aeroModel);
+  const aeroModelPreview = await readAssetDataUrl(assets.projects.aeroModelOg);
+
+  const highlights = [
+    {
+      title: 'Choose the aircraft',
+      label: 'Catalog / ready to use',
+      copy: 'Pick the right plane model from a structured catalog instead of building custom visuals case by case.'
+    },
+    {
+      title: 'Apply the right livery',
+      label: 'Branding / airline fit',
+      copy: 'Use an airline livery when needed or keep the aircraft neutral for product and comparison views.'
+    },
+    {
+      title: 'Request the exact angle',
+      label: 'Precision / consistency',
+      copy: 'Generate the perspective needed for booking flows, internal approvals, marketing assets, or operational tools.'
+    },
+    {
+      title: 'Ship through one API',
+      label: 'Front / CMS / back-office',
+      copy: 'Plug the rendering flow into websites, dashboards, documentation, and back-offices without manual image operations.'
+    },
+    {
+      title: 'Made for high-demand sectors',
+      label: 'Aviation / media / digital',
+      copy: 'Built for aviation, marketing, technology, design, and logistics teams that need clean aircraft visuals on demand.'
+    },
+    {
+      title: 'Edge-first delivery',
+      label: 'Cloudflare / speed',
+      copy: 'Fast global delivery, predictable outputs, and a product shape designed for repeated integration rather than one-off asset production.'
+    }
+  ];
+
+  return buildDocument({
+    title: 'AeroModel Showcase',
+    fileName: 'aeromodel-showcase',
+    captureWidth: 1440,
+    fontFaces,
+    bodyMarkup: `
+      <div class="frame">
+        <div class="capability-shell">
+          <div class="capability-hero">
+            <div class="panel capability-main">
+              <div class="mono accent-orange eyebrow">AeroModel / aircraft visualization API / Dash Systems product</div>
+              <img src="${aeroModelName}" width="260" height="72" class="capability-logo" alt="AeroModel" />
+              <div class="headline split-title">Aircraft visuals, faster than flight</div>
+              <p class="split-text">Compose angle-specific aircraft images with airline liveries in milliseconds for aviation, compliance, branding, and marketing workflows.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:10px; max-width:100%;">
+                ${htmlTag('CLOUDFLARE EDGE', 'orange')}
+                ${htmlTag('API-FIRST DELIVERY')}
+              </div>
+            </div>
+            <div class="panel-alt capability-main">
+              <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+                <img src="${aeroModelMark}" width="34" height="34" style="object-fit:contain;" alt="AeroModel mark" />
+                <div class="mono accent-orange eyebrow">Live endpoint</div>
+              </div>
+              <a href="https://aeromodel.dash-systems.fr/" target="_blank" rel="noreferrer" class="capability-url">aeromodel.dash-systems.fr</a>
+              <img src="${aeroModelPreview}" width="560" height="294" style="width:100%; height:auto; object-fit:cover; border:1px solid ${palette.line}; background:${palette.bg};" alt="AeroModel preview" />
+              <div class="detail-list">
+                <div class="detail-item">
+                  <div class="detail-title">Core use case</div>
+                  <div class="mono detail-meta">Aircraft imagery API</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-title">Fit</div>
+                  <div class="mono detail-meta">Branding / compliance / marketing</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-title">Deployment</div>
+                  <div class="mono detail-meta">Websites / tools / dashboards</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="capability-grid">
+            ${highlights
+              .map(
+                (highlight) => `
+                  <article class="panel capability-card">
+                    <div class="mono accent-orange capability-card-label">${highlight.label}</div>
+                    <h3 class="headline capability-card-title">${highlight.title}</h3>
+                    <p class="capability-card-copy">${highlight.copy}</p>
+                  </article>`
+              )
+              .join('')}
+          </div>
+        </div>
+      </div>`
+  });
+}
+
 async function main() {
   await mkdir(htmlDir, { recursive: true });
   const fontFaces = await getFontFaces();
 
   const pages = [
+    ['aeromodel-showcase.html', await buildAeroModelPage(fontFaces)],
     ['awards-card.html', await buildAwardsCardPage(fontFaces)],
     ['dash-systems-capabilities.html', await buildDashSystemsPage(fontFaces)],
     ['driving-licenses.html', await buildDrivingLicensesPage(fontFaces)],
