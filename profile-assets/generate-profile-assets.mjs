@@ -677,38 +677,38 @@ async function buildDashSystemsPage(fontFaces) {
   const capabilities = [
     {
       title: 'Front-end Web',
-      label: 'Premiere impression / conversion',
-      copy: 'Un site qui donne immediatement confiance, qui se charge vite et qui reste clair sur chaque ecran.'
+      label: 'First impression / conversion',
+      copy: 'A website that builds trust immediately, loads fast, and stays clear on every screen.'
     },
     {
       title: 'Back-end & Architecture',
-      label: 'Fiabilite / fondations',
-      copy: 'Le socle technique qui fait tourner le produit proprement, sans fragilite cachee.'
+      label: 'Reliability / foundations',
+      copy: 'The technical foundation that keeps the product running cleanly, without hidden fragility.'
     },
     {
-      title: 'Back-office sur mesure',
-      label: 'Outils internes / autonomie',
-      copy: 'Un espace d administration pense pour les vraies personnes qui vont l utiliser chaque jour.'
+      title: 'Custom Back-office',
+      label: 'Internal tools / autonomy',
+      copy: 'An admin space designed for the real people who will use it every day.'
     },
     {
-      title: 'Applications mobiles',
-      label: 'Usage / mobilite',
-      copy: 'Des applications mobiles fiables, rapides et agreables a prendre en main sur iOS comme sur Android.'
+      title: 'Mobile Applications',
+      label: 'Usage / mobility',
+      copy: 'Reliable, fast, and easy-to-use mobile apps on both iOS and Android.'
     },
     {
-      title: 'Logiciels & outils metier',
-      label: 'Besoins specifiques / desktop',
-      copy: 'Quand un site web ne suffit pas, je peux aussi intervenir sur des outils metier plus specifiques.'
+      title: 'Business Software & Tools',
+      label: 'Specific needs / desktop',
+      copy: 'When a website is not enough, I can also work on more specific business software and internal tools.'
     },
     {
-      title: 'IoT & systemes connectes',
-      label: 'Hardware / temps reel',
-      copy: 'Du capteur a l interface finale, avec des donnees visibles et exploitables en temps reel.'
+      title: 'IoT & Connected Systems',
+      label: 'Hardware / real-time',
+      copy: 'From sensor to final interface, with visible and usable real-time data.'
     },
     {
-      title: 'Solutions custom & enterprise',
-      label: 'Sur mesure / cas complexes',
-      copy: 'Pour les besoins qui ne rentrent dans aucune case standard, avec un niveau de personnalisation eleve.'
+      title: 'Custom & Enterprise Solutions',
+      label: 'Custom / complex cases',
+      copy: 'For needs that do not fit any standard box, with a high level of customization.'
     }
   ];
 
@@ -724,10 +724,10 @@ async function buildDashSystemsPage(fontFaces) {
             <div class="panel capability-main">
               <div class="mono accent-orange eyebrow">Dash Systems / freelance website / offer map</div>
               <img src="${dashSystems}" width="240" height="72" class="capability-logo" alt="Dash Systems" />
-              <div class="headline split-title">Ce que je peux construire</div>
-              <p class="split-text">Une vue d ensemble simple pour comprendre ce qui peut etre livre. Chaque competence s ouvre ensuite avec une representation visuelle plus concrete.</p>
+              <div class="headline split-title">What I can build</div>
+              <p class="split-text">A simple overview to understand what can be delivered. Each capability can then open into a more concrete visual representation.</p>
               <div style="display:flex; flex-wrap:wrap; gap:10px; max-width:100%;">
-                ${htmlTag('SITES PREMIUM')}
+                ${htmlTag('PREMIUM WEBSITES')}
                 ${htmlTag('BACK-END / API')}
                 ${htmlTag('BACK-OFFICE')}
                 ${htmlTag('MOBILE / IOT', 'orange')}
@@ -737,15 +737,15 @@ async function buildDashSystemsPage(fontFaces) {
             <div class="panel-alt capability-main">
               <div class="mono accent-orange eyebrow">Endpoint</div>
               <a href="https://www.dash-systems.fr/" target="_blank" rel="noreferrer" class="capability-url">www.dash-systems.fr</a>
-              <p class="split-text">Des systemes solides. Des experiences qui respirent. Un cadre freelance pour concevoir, livrer et maintenir des produits numeriques complets.</p>
+              <p class="split-text">Solid systems. Interfaces that breathe. A freelance framework to design, ship, and maintain complete digital products.</p>
               <div class="detail-list">
                 <div class="detail-item">
                   <div class="detail-title">Positioning</div>
-                  <div class="mono detail-meta">Freelance haut de gamme</div>
+                  <div class="mono detail-meta">Premium freelance delivery</div>
                 </div>
                 <div class="detail-item">
                   <div class="detail-title">Delivery</div>
-                  <div class="mono detail-meta">Conception → mise en ligne</div>
+                  <div class="mono detail-meta">Design to launch</div>
                 </div>
                 <div class="detail-item">
                   <div class="detail-title">Support</div>
