@@ -1,92 +1,28 @@
 <div align="center">
-  <img src="./profile-assets/exports/profile-hero.png" alt="Sebastien Aglae profile hero" width="100%" />
+  <img src="./profile-assets/exports/profile.png" alt="Sébastien Aglaé profile" width="100%" />
 </div>
 
 <br />
 
 <div align="center">
-  <a href="https://sebastien-aglae.fr">Portfolio</a>
+  <a href="https://sebastien-aglae.fr">Portfolio</a>&nbsp;
   ·
-  <a href="https://www.dash-systems.fr/">Dash Systems</a>
+  &nbsp;<a href="https://www.dash-systems.fr/">Dash Systems</a>&nbsp;
   ·
-  <a href="https://aeromodel.dash-systems.fr/">AeroModel</a>
+  &nbsp;<a href="https://aeromodel.dash-systems.fr/">AeroModel</a>&nbsp;
   ·
-  <a href="https://core-dash.com">Core Dash</a>
+  &nbsp;<a href="https://core-dash.com">Core Dash</a>&nbsp;
   ·
-  <a href="https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/">LinkedIn</a>
+  &nbsp;<a href="https://voyageons.app">Voyageons (soon)</a>&nbsp;
+  ·
+  &nbsp;<a href="https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/">LinkedIn</a>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./profile-assets/exports/project-matrix.png" alt="Project matrix" width="100%" />
+  <img src="./profile-assets/exports/voyageons.png" alt="Voyageons — collaborative travel planner" width="100%" />
 </div>
-
-<br />
-
-<div align="center">
-  <img src="./profile-assets/exports/dash-systems-capabilities.png" alt="Dash Systems capabilities" width="100%" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./profile-assets/exports/aeromodel-showcase.png" alt="AeroModel showcase" width="100%" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./profile-assets/exports/awards-card.png" alt="Awards and competitions" width="49%" />
-  <img src="./profile-assets/exports/driving-licenses.png" alt="Driving licenses" width="49%" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./profile-assets/exports/education-card.png" alt="Education" width="49%" />
-</div>
-
-<p align="center">
-  <a href="./profile-assets/html/profile-hero.html">profile-hero.html</a>
-  ·
-  <a href="./profile-assets/html/aeromodel-showcase.html">aeromodel-showcase.html</a>
-  ·
-  <a href="./profile-assets/html/dash-systems-capabilities.html">dash-systems-capabilities.html</a>
-  ·
-  <a href="./profile-assets/html/project-matrix.html">project-matrix.html</a>
-  ·
-  <a href="./profile-assets/html/awards-card.html">awards-card.html</a>
-  ·
-  <a href="./profile-assets/html/driving-licenses.html">driving-licenses.html</a>
-  ·
-  <a href="./profile-assets/html/education-card.html">education-card.html</a>
-</p>
-
-## Profile
-
-I build ambitious software products across game development, backend systems, AI orchestration, and interactive product design.
-
-- Co-founder of Hana Games
-- Creator of Core Dash
-- Builder of Dash Systems Freelance
-- Builder of AeroModel
-- Full-stack engineer across Unity, .NET, React, cloud infrastructure, data systems, and IoT
-- Based in the south of France, open to opportunities in Osaka
-
-## Selected Work
-
-### AeroModel
-Aircraft visualization API product by Dash Systems for aviation, branding, compliance, marketing, and internal tools.
-
-- Stack: Next.js, image API design, Cloudflare edge delivery, product design, structured catalog workflows
-- Focus: angle-specific aircraft renders, airline liveries, fast integration, global delivery
-
-### Dash Systems
-Freelance website and delivery framework for premium websites, back-offices, mobile apps, connected systems, and custom software.
-
-- Stack: Next.js, React, TypeScript, responsive UI, animation, SEO, deployment, maintenance
-- Focus: trust-first positioning, clear scope, premium execution, end-to-end delivery
 
 ## Selected Stack
 <p>
@@ -142,10 +78,12 @@ Freelance website and delivery framework for premium websites, back-offices, mob
     <img src="./assets/skills/logo_vite.svg" alt="Vite" width="32" />
 </p>
 
-## Contact
+## Website & Contact
 
-- Portfolio: https://sebastien-aglae.fr/
-- Dash Systems: https://dash-systems.fr/
-- AeroModel: https://aeromodel.dash-systems.fr/
-- Product: https://core-dash.com/
-- LinkedIn: https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/
+Portfolio: https://sebastien-aglae.fr/  
+Dash Systems: https://dash-systems.fr/  
+AeroModel: https://aeromodel.dash-systems.fr/  
+Core Dash: https://core-dash.com/  
+voyageons: https://voyageons.app/ (soon)  
+
+LinkedIn: [https://www.linkedin.com/in/sébastien-aglaé](https://www.linkedin.com/in/s%C3%A9bastien-agla%C3%A9-0b06a1175/)
